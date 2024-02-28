@@ -5,9 +5,8 @@ import * as sounds from "./sounds.js"
 
 export function toggleRunning() {
     state.isRunning = document.documentElement.classList.toggle('running')
-
-    timer.countdown()
     sounds.buttonPressAudio.play()
+    timer.countdown()
 }
 
 export function reset() {
@@ -23,7 +22,7 @@ export function set() {
     el.minutes.setAttribute('contenteditable', true)
 
     console.log(`state.minutes = ${state.minutes}`)
-
+    sounds.buttonPressAudio.play()
     el.minutes.focus()
 }
 
@@ -36,4 +35,8 @@ export function toggleMusic() {
     }
 
     sounds.bgAudio.pause()
+}
+
+export function toggleMode() {
+    sounds.buttonPressAudio.play()
 }
