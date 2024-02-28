@@ -22,8 +22,8 @@ export function countdown() {
     }
 
     if (minutes < 0) {
-        reset()
         kitchenTimer.play()
+        reset()
         return
     }
     updateDisplay(minutes, seconds)
