@@ -22,7 +22,7 @@ export function countdown() {
     }
 
     if (minutes < 0) {
-        kitchenTimer.play()
+        // kitchenTimer.play()
         reset()
         return
     }
