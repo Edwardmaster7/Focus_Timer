@@ -36,9 +36,3 @@ export function toggleMusic() {
 
     sounds.bgAudio.pause()
 }
-
-export function toggleMode() {
-    if (state.isDarkMode = !state.isDarkMode) {
-        sounds.buttonPressAudio.play()
-    }
-}
