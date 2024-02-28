@@ -38,5 +38,7 @@ export function toggleMusic() {
 }
 
 export function toggleMode() {
-    sounds.buttonPressAudio.play()
+    if (state.isDarkMode = !state.isDarkMode) {
+        sounds.buttonPressAudio.play()
+    }
 }
